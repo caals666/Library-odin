@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <p class="text-5xl mt-6 text-center">Library App</p>
+    <div class="flex mt-10 justify-center">
+      <button id="addBook" class="hover:bg-blue-600 hover:cursor-pointer rounded-xl p-2 text-2xl bg-blue-400 flex justify-center text-shadow-white"> + Add Book</button>
+    </div>
+    <div id="bookTab" class="hidden w-[400px] bg-blue-300 p-6 mx-auto mt-8 grid grid-cols-2 grid-rows-1 gap-4">
+      <label class="text-[20px]" for="bookName">Book name</label>
+      <input id="bookName" class="border rounded p-2 w-50px h-20px" />
+      <label class="text-[20px]" for="bookAuthor">Book author</label>
+      <input id="bookAuthor" class="border rounded p-2 w-50px h-20px"/>
+      <label class="text-[20px]" for="bookPages">Number of pages</label>
+      <input id="bookPages" class="border rounded p-2 w-50px h-20px"/>
+      <label class="text-[20px]" for="readStatus">Read status</label>
+      <input id="readStatus" type="checkbox" class="ml-[-250px] border rounded p-2 w-50px h-20px"/>
+      <button id="addBtn">Add</button>
+    </div>
+    <div class="mt-[70px] justify-items-center grid grid-cols-3 ml-[-40px]" id="bookDiv"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
